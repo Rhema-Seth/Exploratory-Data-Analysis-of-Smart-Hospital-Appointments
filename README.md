@@ -32,8 +32,6 @@ This project analyzes patient appointment data to discover useful patterns and r
 
 The dataset contains 2,706 rows and 19 columns describing patient demographics, appointment details, doctor experience, healthcare costs, and satisfaction scores.
 
-The dataset was obtained from Kaggle. The original underlying data source has not been independently verified.
-
 ### Dataset Features
 
 | Column | Description |
@@ -105,7 +103,6 @@ The Interquartile Range (IQR) method was used to identify potential outliers in 
 - Age
 - Doctor experience
 - Consultation fee
-- Total bill
 
 The IQR was calculated using:
 
@@ -156,8 +153,6 @@ Key observations from the original dataset:
 - Average consultation fee: Approximately 608.10 dataset currency units.
 - Average satisfaction score: Approximately 7.73 out of 10.
 
-These statistics describe the original dataset before preprocessing that may have changed the row count or distributions.
-
 ### 7.5 Percentage Analysis
 
 Percentage distributions were calculated using normalized value counts to identify the proportion of records in each category.
@@ -181,7 +176,6 @@ Percentage distributions were calculated using normalized value counts to identi
 - No Show: 12.42%
 - Cancelled: 4.84%
 
-These percentages reflect the previously analyzed distributions and may change after preprocessing.
 
 ### 7.6 Correlation Analysis
 
@@ -203,8 +197,6 @@ Correlation analysis was performed using the `corr()` function to identify relat
 - Doctor experience and consultation fee showed a very strong positive relationship.
 - Age and BMI had almost no linear relationship in the analyzed data.
 
-Correlation indicates association and does not establish causation.
-
 ## 8. Data Visualization
 
 Data visualization was used to present the findings clearly and identify patterns in the dataset.
@@ -224,6 +216,12 @@ A histogram was used to understand the distribution of patient ages and identify
 A pie chart was used to display the percentage distribution of male and female patients.
 
 ![Pie Chart - Gender Distribution](images/Pie%20chart%20-%20gender%20distribution.png)
+
+#### Box Plot - Total Bill Distribution
+
+A box plot was used to examine the distribution of total bills and identify potential outliers. When only total bill is analyzed, the box plot is a univariate visualization.
+
+![Box Plot - Medicine Cost Outlier Analysis](images/Box%20Plot%20-%20Medicine%20cost%20outlier%20analysis.png)
 
 ### 8.2 Bivariate Analysis
 
@@ -259,11 +257,6 @@ A correlation heatmap was used to display relationships among numerical variable
 
 ![Correlation Heatmap - Numerical Variables](images/Correlation%20heatmap%20-%20numerical%20variables.png)
 
-#### Box Plot - Total Bill Distribution
-
-A box plot was used to examine the distribution of total bills and identify potential outliers. When only total bill is analyzed, the box plot is a univariate visualization.
-
-![Box Plot - Medicine Cost Outlier Analysis](images/Box%20Plot%20-%20Medicine%20cost%20outlier%20analysis.png)
 
 ## 8.5 Interactive Data Visualization Using Plotly
 
@@ -327,23 +320,41 @@ The findings are exploratory and should not be interpreted as clinical conclusio
 - Build a predictive model for appointment no-shows, subject to suitable data and validation.
 - Use verified real-world healthcare datasets for further investigation.
 
+
 ## 13. Project Structure
 
 ```text
 Exploratory-Data-Analysis-of-Smart-Hospital-Appointments/
 │
 ├── README.md
+│
 ├── Exploratory_Data_Analysis_of_Smart_Hospital_Appointments.ipynb
+│
 ├── dataset.csv
+│
 └── images/
-    ├── age_distribution.png
-    ├── gender_distribution.png
-    ├── appointment_status.png
-    ├── monthly_appointment_trend.png
-    ├── medicine_cost_vs_total_bill.png
-    ├── total_bill_boxplot.png
-    └── correlation_heatmap.png
+    │
+    ├── Bar Chart - appointment status.png
+    │
+    ├── Box Plot - Medicine cost outlier analysis.png
+    │
+    ├── Correlation heatmap - numerical variables.png
+    │
+    ├── Histogram - Patient age distribution.png
+    │
+    ├── Line Chart - Monthly appointment trends.png
+    │
+    ├── Pie chart - gender distribution.png
+    │
+    ├── Plotly Bar- department wise patient count.png
+    │
+    ├── Plotly scatter- doctor experience vs consultation fee.png
+    │
+    ├── Scatter Plot - medicine cost vs total bill.png
+    │
+    └── plotly violin plot - patient satisfaction by appointment status.png
 ```
+
 
 ## 14. Author
 
@@ -351,5 +362,5 @@ Exploratory-Data-Analysis-of-Smart-Hospital-Appointments/
 
 Aspiring Data Analyst 
 
-**Areas of Interest:** Data Analytics, Healthcare Analytics, Data Visualization, and Business Intelligence
+**Areas of Interest:** Data Analytics, Healthcare Analytics, Business Analytics
 
