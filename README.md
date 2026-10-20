@@ -1,5 +1,5 @@
 
-# Healthcare Patient Appointment Data Analysis
+# Exploratory Data Analysis of Smart Hospital Appointments
 
 ## 1. Abstract / Overview
 
@@ -217,13 +217,13 @@ Univariate analysis examines one variable at a time.
 
 A histogram was used to understand the distribution of patient ages and identify the age groups represented in the dataset.
 
-![Age Distribution](images/age_distribution.png)
+![Age Distribution](images/Histogram%20-%20Patient%20age%20distribution.png)
 
 #### Pie Chart - Gender Distribution
 
 A pie chart was used to display the percentage distribution of male and female patients.
 
-![Gender Distribution](images/gender_distribution.png)
+![Pie Chart - Gender Distribution](images/Pie%20chart%20-%20gender%20distribution.png)
 
 ### 8.2 Bivariate Analysis
 
@@ -233,13 +233,13 @@ Bivariate analysis examines the relationship between two variables.
 
 A bar chart was used to compare the number of completed, cancelled, and missed appointments.
 
-![Appointment Status](images/appointment_status.png)
+![Bar Chart - Appointment Status](images/Bar%20Chart%20-%20appointment%20status.png)
 
 #### Scatter Plot - Medicine Cost vs. Total Bill
 
 A scatter plot was used to examine the relationship between medicine expenses and total healthcare bills.
 
-![Medicine Cost vs Total Bill](images/medicine_cost_vs_total_bill.png)
+![Medicine Cost vs Total Bill](images/Scatter%20Plot%20-%20medicine%20cost%20vs%20total%20bill.png)
 
 ### 8.3 Time-Based Analysis
 
@@ -247,7 +247,7 @@ A scatter plot was used to examine the relationship between medicine expenses an
 
 A line chart was used to analyze changes in appointment counts across the months represented in the dataset.
 
-![Monthly Appointment Trend](images/monthly_appointment_trend.png)
+![Line Chart - Monthly Appointment Trends](images/Line%20Chart%20-%20Monthly%20appointment%20trends.png)
 
 ### 8.4 Multivariate Analysis
 
@@ -257,14 +257,34 @@ Multivariate analysis examines multiple variables simultaneously.
 
 A correlation heatmap was used to display relationships among numerical variables and identify strong and weak correlations.
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Correlation Heatmap - Numerical Variables](images/Correlation%20heatmap%20-%20numerical%20variables.png)
 
 #### Box Plot - Total Bill Distribution
 
 A box plot was used to examine the distribution of total bills and identify potential outliers. When only total bill is analyzed, the box plot is a univariate visualization.
 
-![Total Bill Box Plot](images/total_bill_boxplot.png)
+![Box Plot - Medicine Cost Outlier Analysis](images/Box%20Plot%20-%20Medicine%20cost%20outlier%20analysis.png)
 
+## 8.5 Interactive Data Visualization Using Plotly
+
+### Plotly Bar Chart – Department-wise Patient Appointments
+**Analysis Type:** Bivariate Analysis  
+Compares appointment counts across different healthcare departments.
+
+![Plotly Bar Chart - Department-wise Patient Count](images/Plotly%20Bar-%20department%20wise%20patient%20count.png)
+
+### Plotly Scatter Plot – Doctor Experience vs. Consultation Fee
+**Analysis Type:** Bivariate Analysis  
+Shows the relationship between doctor experience and consultation fees.
+
+![Doctor Experience vs Consultation Fee](images/Plotly%20scatter-%20doctor%20experience%20vs%20consultation%20fee.png)
+
+
+### Plotly Violin Plot – Patient Satisfaction
+**Analysis Type:** Univariate Analysis  
+Shows the distribution and density of patient satisfaction scores.
+
+![Patient Satisfaction by Appointment Status](images/plotly%20violin%20plot%20-%20patient%20satisfaction%20by%20appointment%20status.png)
 
 ## 9. Key Findings
 
@@ -310,10 +330,10 @@ The findings are exploratory and should not be interpreted as clinical conclusio
 ## 13. Project Structure
 
 ```text
-healthcare-patient-appointment-analysis/
+Exploratory-Data-Analysis-of-Smart-Hospital-Appointments/
 │
 ├── README.md
-├── healthcare_patient_appointment_analysis.ipynb
+├── Exploratory_Data_Analysis_of_Smart_Hospital_Appointments.ipynb
 ├── dataset.csv
 └── images/
     ├── age_distribution.png
